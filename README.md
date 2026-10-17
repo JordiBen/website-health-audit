@@ -4,7 +4,6 @@
 
 > **Run it in the cloud with no setup:** [Website SEO Audit & DNS Lookup: SSL, DMARC, Headers on the Apify Store](https://apify.com/manageable_gully/website-health-audit).  
 > Pay only per result, export to JSON/CSV/Excel, schedule runs and call it from the API.
-<!-- Note: the Apify Store page goes live once the Actor is published. -->
 <!-- AFFILIATE_LINK_PLACEHOLDER: replace the Apify links above with the affiliate link when available -->
 
 Paste a list of domains or URLs and get one row per site with a **0–100 health score** and a plain-English list of what to fix. One run replaces several single-purpose tools: a **technical SEO audit**, a **bulk DNS lookup** (A, AAAA, MX, NS, CAA, SPF, DMARC), an **SSL certificate checker** with days until expiry, a **security headers** check and a redirect checker.
