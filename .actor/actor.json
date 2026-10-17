@@ -1,8 +1,8 @@
 {
   "actorSpecification": 1,
   "name": "website-health-audit",
-  "title": "Website SEO Audit & DNS Lookup: SSL, DMARC, Headers",
-  "description": "Bulk SEO audit and DNS lookup for domains or URLs: SSL certificate expiry checker, DNS records (SPF, DMARC, MX, CAA), security headers, redirect chains, response time and on-page SEO, with a 0-100 score and a plain-English fix list.",
+  "title": "SEO Audit & Domain Checker: DNS Lookup, SSL, DMARC",
+  "description": "Bulk SEO audit and domain checker: DNS lookup (A, MX, NS, SPF, DMARC, CAA), SSL certificate expiry, security headers, redirect chains and on-page SEO for a list of domains, with a 0-100 score and a plain-English fix list. $5 per 1,000 sites.",
   "version": "1.0",
   "buildTag": "latest",
   "input": "./input_schema.json",
