@@ -1,0 +1,75 @@
+{
+  "actorSpecification": 1,
+  "name": "website-health-audit",
+  "title": "Website SEO Audit & DNS Lookup: SSL, DMARC, Headers",
+  "description": "Bulk SEO audit and DNS lookup for domains or URLs: SSL certificate expiry checker, DNS records (SPF, DMARC, MX, CAA), security headers, redirect chains, response time and on-page SEO, with a 0-100 score and a plain-English fix list.",
+  "version": "1.0",
+  "buildTag": "latest",
+  "input": "./input_schema.json",
+  "dockerfile": "../Dockerfile",
+  "readme": "../README.md",
+  "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "views": {
+        "overview": {
+          "title": "Overview",
+          "transformation": {
+            "fields": [
+              "input",
+              "score",
+              "issueCount",
+              "http.finalUrl",
+              "http.status",
+              "ssl.daysUntilExpiry",
+              "dns.spf",
+              "dns.dmarc",
+              "securityHeaders.missing",
+              "seo.title"
+            ]
+          },
+          "display": {
+            "component": "table",
+            "properties": {
+              "input": {
+                "label": "Target"
+              },
+              "score": {
+                "label": "Score",
+                "format": "number"
+              },
+              "issueCount": {
+                "label": "Issues",
+                "format": "number"
+              },
+              "http.finalUrl": {
+                "label": "Final URL",
+                "format": "link"
+              },
+              "http.status": {
+                "label": "HTTP"
+              },
+              "ssl.daysUntilExpiry": {
+                "label": "SSL days left",
+                "format": "number"
+              },
+              "dns.spf": {
+                "label": "SPF"
+              },
+              "dns.dmarc": {
+                "label": "DMARC"
+              },
+              "securityHeaders.missing": {
+                "label": "Missing headers",
+                "format": "array"
+              },
+              "seo.title": {
+                "label": "Title"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
