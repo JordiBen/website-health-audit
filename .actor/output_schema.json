@@ -1,0 +1,12 @@
+{
+  "actorOutputSchemaVersion": 1,
+  "title": "Website SEO audit & DNS lookup output",
+  "properties": {
+    "results": {
+      "type": "string",
+      "template": "{{links.apiDefaultDatasetUrl}}/items",
+      "title": "Audit results",
+      "description": "One item per domain/URL: 0-100 score, SSL, DNS (SPF/DMARC/MX/CAA), security headers, redirects, response time, on-page SEO and a fix list."
+    }
+  }
+}
